@@ -4,4 +4,9 @@ const parkingController = require('../controllers/parkingController');
 
 router.post('/', parkingController.createParking)
 
+router.get('/parkings', parkingController.getParkings)
+
+router.get('/:id', parkingController.getParking)
+
+router.delete('/:id', parkingController.deleteParking)
 module.exports = router;
