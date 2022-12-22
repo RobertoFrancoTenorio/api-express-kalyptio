@@ -11,7 +11,7 @@ app.use(express.json())
 
 app.use(cors())
 
-app.use('/api/parking', require('./routes/parking'))
+app.use('/api/parkings/', require('./routes/parking'))
 
 app.listen(4000, ()=>{
     console.log('Sin errores');
