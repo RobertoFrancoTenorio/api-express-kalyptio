@@ -21,7 +21,3 @@ exports.deleteParking = (req, res) => {
     return res.send(parkings)
 }
 
-exports.search_Parking = (req, res) => {
-    console.log('search_Parking')
-    res.send(parkings) 
-}
