@@ -17,7 +17,10 @@ exports.getParking = (req, res) => {
 }
 
 exports.deleteParking = (req, res) => {
-    parkings[req.params.id].pop();
-    return res.send(parkings)
+    //parkings[req.params.id].pop();
+    console.log('delete', req.params.id)
+
+    parkings.splice(req.params.id, 1)
+    return res.send(parkings) 
 }
 
